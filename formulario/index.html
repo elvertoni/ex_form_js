@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Form básico</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<form action="" id="questions" method="post" name="questions">
+		<h1>Agendamento</h1>
+
+		<div>
+			<label for="name">Nome</label>
+			<input id="name" name="name" type="text">
+		</div>
+
+		<div>
+			<label for="email">E-mail</label>
+			<input id="email" name="email" type="email" placeholder="email@exemplo.com">
+		</div>
+
+		<div>
+			<label for="tel">Telefone</label>
+			<input id="phone" name="phone" type="tel">
+		</div>
+
+		<fieldset>
+			<legend>Endereço</legend>
+
+			<div>
+				<label for="street">Rua e número</label>
+				<input id="street" name="street" type="text">
+			</div>
+
+			<div>
+				<label for="city">Cidade</label>
+				<input id="city" name="city" type="text">
+			</div>
+
+
+			<div>
+				<label for="state">Estado</label> 
+				<select id="state" name="state">
+					<option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="cep">CEP</label>
+				<input id="cep" pattern="[0-9]{8}" type="text" placeholder="8 dígitos">
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Período de preferência</legend> 
+
+      <label></label>
+			<input id="morning" name="favcolor" type="checkbox" value="morning"> 
+			<label for="morning">Manhã</label> 
+
+			<input id="afternoon" name="favcolor" type="checkbox" value="afternoon"> 
+			<label for="afternoon">Tarde</label> 
+
+			<input id="evening" name="favcolor" type="checkbox" value="evening"> 
+			<label for="evening">Noite</label>
+
+		</fieldset>
+    <label></label>
+    <input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
